@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <title>Item Display</title>
+  <script src="public/js/item-list.js" defer></script>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 40px;
+      color: #111;
+    }
+
+    .main-container {
+      max-width: 900px;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin: 0 0 32px;
+    }
+
+    .select {
+      width: 300px;
+      height: 44px;
+      font-size: 20px;
+      padding: 4px 12px;
+      border: 2px solid #777;
+      border-radius: 8px;
+      background-color: white;
+    }
+
+    hr {
+      margin: 24px 0;
+      border: none;
+      border-top: 2px solid #ccc;
+    }
+
+    .prop-row {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      align-items: center;
+      min-height: 48px;
+      font-size: 28px;
+    }
+
+    .prop-name {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+<div class="main-container">
+  <div>
+    <h2>Item Display</h2>
+  </div>
+
+  <div>
+    <select name="item-list" id="item-list" class="select"></select>
+  </div>
+
+  <hr />
+
+  <div class="prop-row">
+    <div class="prop-name">ID</div>
+    <div id="item-id"></div>
+  </div>
+
+  <div class="prop-row">
+    <div class="prop-name">Name</div>
+    <div id="item-name"></div>
+  </div>
+
+  <div class="prop-row">
+    <div class="prop-name">Category</div>
+    <div id="item-category"></div>
+  </div>
+
+  <div class="prop-row">
+    <div class="prop-name">Inventory Amt.</div>
+    <div id="item-inventory"></div>
+  </div>
+
+  <div class="prop-row">
+    <div class="prop-name">List price</div>
+    <div id="item-price"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
